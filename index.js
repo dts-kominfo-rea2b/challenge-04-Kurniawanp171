@@ -9,7 +9,7 @@ const dates = [
 
 // TODO: Buatlah fungsi createDate
 const createDate = (dates, position) => {
-  if (position) {
+  if (position != null) {
     const timeInSecond = (Date.parse(dates[position]))/1000;
 
     return timeInSecond.toString();
